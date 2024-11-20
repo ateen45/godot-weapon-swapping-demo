@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd6mcq11heqhp"]
+
+[ext_resource type="Texture2D" uid="uid://b1ldagccu0qfg" path="res://Assets/Tommy Gun Final.png" id="1_3fm0v"]
+[ext_resource type="Script" path="res://arma.gd" id="1_3i2jv"]
+
+[node name="arma_2" type="Node2D"]
+script = ExtResource("1_3i2jv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("1_3fm0v")
+hframes = 2
+vframes = 7
+frame = 1

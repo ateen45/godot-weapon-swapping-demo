@@ -1,0 +1,10 @@
+res://level.tscn
+res://arma_cambiable.tscn
+res://arma_cambiable.gd
+res://jugador.gd
+res://jugador.tscn
+res://arma_1.tscn
+res://arma_2.tscn
+res://arma_3.tscn
+res://playerBus.gd
+res://arma.gd

@@ -1,0 +1,17 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1732067627
+arma.gd::GDScript::-1::1732047298::0::1::::Weapon<>Node2D<>::
+arma_1.tscn::PackedScene::4841720067199713288::1732048658::0::1::::<><>::res://arma.gd<>uid://b1ldagccu0qfg::::res://Assets/Tommy Gun Final.png
+arma_2.tscn::PackedScene::5048136665906528141::1732048658::0::1::::<><>::uid://b1ldagccu0qfg::::res://Assets/Tommy Gun Final.png<>res://arma.gd
+arma_3.tscn::PackedScene::9181984486501502770::1732048658::0::1::::<><>::res://arma.gd<>uid://de2yywtgksoh::::res://Assets/gun1side.png
+arma_cambiable.gd::GDScript::-1::1732048719::0::1::::<>Node2D<>::
+arma_cambiable.tscn::PackedScene::5635247052325555754::1732048719::0::1::::<><>::res://arma_cambiable.gd
+icon.svg::CompressedTexture2D::5901544890958063979::1732030194::1732030198::1::::<><>::
+jugador.gd::GDScript::-1::1732048917::0::1::::Player<>CharacterBody2D<>::
+jugador.tscn::PackedScene::4799981634956509326::1732048917::0::1::::<><>::res://jugador.gd<>uid://ca8mol8dwoqvo::::res://arma_1.tscn
+level.tscn::PackedScene::773207740451227449::1732048658::0::1::::<><>::uid://cane84wjtlire::::res://jugador.tscn<>uid://cmj0xwfd7q0xy::::res://arma_cambiable.tscn<>uid://cd6mcq11heqhp::::res://arma_2.tscn
+::res://Assets/::1732048045
+cat_fighter_sprite1.png::CompressedTexture2D::6010061041788065467::1354976510::1732031128::1::::<><>::
+cat_fighter_sprite2.png::CompressedTexture2D::8075791786176472612::1354976494::1732031128::1::::<><>::
+gun1side.png::CompressedTexture2D::220507555206554299::1732048020::1732048045::1::::<><>::
+Tommy Gun Final.png::CompressedTexture2D::4234221242903208504::1732031107::1732031128::1::::<><>::

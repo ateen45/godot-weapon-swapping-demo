@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://lasvbaidf3sn"]
+
+[ext_resource type="PackedScene" uid="uid://cane84wjtlire" path="res://jugador.tscn" id="1_bffe6"]
+[ext_resource type="PackedScene" uid="uid://cmj0xwfd7q0xy" path="res://arma_cambiable.tscn" id="2_ixdml"]
+[ext_resource type="PackedScene" uid="uid://cd6mcq11heqhp" path="res://arma_2.tscn" id="3_xcvjf"]
+[ext_resource type="PackedScene" uid="uid://d3227cdg0wyxe" path="res://arma_3.tscn" id="4_ut2gd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xnvpm"]
+
+[sub_resource type="Gradient" id="Gradient_m8fv4"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.103896)
+colors = PackedColorArray(4.50023e-06, 0.605904, 0, 1, 0.290243, 0.151645, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_gfixi"]
+gradient = SubResource("Gradient_m8fv4")
+width = 20
+height = 20
+fill_from = Vector2(0, 0.133028)
+fill_to = Vector2(0, 1)
+
+[node name="Level" type="Node2D"]
+
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(573, 640)
+scale = Vector2(59.2, 4.48)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("RectangleShape2D_xnvpm")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor/CollisionShape2D"]
+texture = SubResource("GradientTexture2D_gfixi")
+
+[node name="Jugador" parent="." instance=ExtResource("1_bffe6")]
+position = Vector2(582, 172)
+
+[node name="WeaponSwap1" parent="." instance=ExtResource("2_ixdml")]
+position = Vector2(79, 554)
+WEAPON = ExtResource("3_xcvjf")
+
+[node name="WeaponSwap2" parent="." instance=ExtResource("2_ixdml")]
+position = Vector2(1015, 554)
+WEAPON = ExtResource("4_ut2gd")
